@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Lab Project — Grigoriev</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 32px 24px;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #fdfdfd;
+        }
+        h1 {
+            color: #fc6d26;
+            border-bottom: 3px solid #fc6d26;
+            padding-bottom: 12px;
+        }
+        h2 { color: #e24329; margin-top: 2em; }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+            color: #c7254e;
+        }
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 16px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+        pre code { background: none; color: inherit; }
+        ul { padding-left: 1.6em; }
+        footer {
+            margin-top: 3em;
+            padding-top: 1em;
+            border-top: 1px solid #ddd;
+            color: #6b7c93;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Java Lab Project</h1>
+    <p>Учебный проект по курсу «Git, GitLab/GitHub и документация». Реализует калькулятор на Java.</p>
+
+    <h2>Функциональность</h2>
+    <ul>
+        <li>Класс <code>Main</code> — точка входа приложения.</li>
+        <li>Класс <code>Calculator</code> — методы <code>add</code> и <code>divide</code>.</li>
+    </ul>
+
+    <h2>Сборка и запуск</h2>
+    <pre><code>mkdir -p build
+javac -d build src/*.java
+java -cp build Main</code></pre>
+
+    <h2>Пример использования</h2>
+    <pre><code>Calculator calc = new Calculator();
+int sum = calc.add(2, 3);        // → 7
+int div = calc.divide(10, 2);    // → 5</code></pre>
+
+    <h2>Структура</h2>
+    <pre><code>java-lab-grigoriev/
+├── src/
+│   ├── Main.java
+│   └── Calculator.java
+├── .gitlab-ci.yml
+├── README.md
+└── CHANGELOG.md</code></pre>
+
+    <footer>
+        © 2026 Григорьева Карина. Проект распространяется по лицензии MIT.
+    </footer>
+</body>
+</html>
